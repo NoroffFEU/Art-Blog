@@ -1,0 +1,30 @@
+@import url(/css/main.css);
+
+
+table {
+    background-color: white;
+    padding: 1.5rem 2rem;
+}
+
+.table-icon {
+    background-color: var(--input-box);
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    color: var(--light-coloring);
+}
+
+.newpost-container {
+    display: flex;
+    justify-content: end;
+}
+
+.button-newpost {
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    align-self: end;
+   
+
+}
+

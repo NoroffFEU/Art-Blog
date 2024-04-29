@@ -1,0 +1,37 @@
+@import url(reset.css);
+@import url(main.css);
+
+
+
+.filter-and-search-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.vertical-card {
+    width: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.v-card-content {
+    padding-top: 1rem;
+}
+
+
+

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+
+:root {
+    --background-color: #FFFCF3;
+    --primary-color: #F9C7F1;
+    --text-color: #191919;
+    --input-box: #F5F3EE;
+    --light-coloring: #6C6962;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--background-color);
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    font-size: 100%;
+}
+
+main {
+    padding: 5rem;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Typography*/
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Sansita Swashed", Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-blue);
+    font-weight: 00;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1 rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+th {
+    font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.table-category {
+    font-weight: 700;
+}
+
+
+img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover;
+}
+
+/* Buttons*/
+
+.button {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border: none;
+    border-radius: 2px;
+    font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    
+}
+
+input {
+    margin-bottom: 1.2rem;
+}
+
+select {
+    margin-bottom: 1.2rem;
+}
+
