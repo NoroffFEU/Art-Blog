@@ -6,6 +6,7 @@
     --text-color: #191919;
     --input-box: #F5F3EE;
     --light-coloring: #6C6962;
+    --m-background-table: #f9f9f98f;
 }
 
 html {
@@ -18,10 +19,11 @@ body {
     min-height: 100vh;
     display: flex;
     font-size: 100%;
+    justify-content: center;
 }
 
 main {
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .wrapper {
@@ -83,17 +85,8 @@ p {
     line-height: 1.5;
 }
 
-th {
-    font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    padding-left: 3rem;
-    padding-bottom: 1.5rem;
-}
 
-.table-category {
-    font-weight: 700;
-}
+
 
 
 img {
