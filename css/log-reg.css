@@ -13,7 +13,7 @@ main {
 }
 
 .r-side {
-    background-color: blueviolet;
+    background-color: var(--primary-color);
 }
 
 .l-side {
@@ -21,8 +21,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: var(--background-color);
     
 }
+
+.logo {
+    width: 140%;
+    height: 15%;
+}
+
+
+
+
 
 
