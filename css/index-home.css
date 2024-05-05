@@ -1,8 +1,18 @@
-@import url(reset.css);
 @import url(main.css);
 
 main {
     padding: 0;
+}
+
+.nav-bars {
+    display: none;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
 }
 
 /*Carousel*/
@@ -15,8 +25,7 @@ main {
     background-color: rgba(240, 248, 255, 0.464);
     padding: 2rem;
     top: 50%;
-    left: 10rem;
-    right: 10rem;
+    width: 50%;
 }
 
 .carousel-container {
@@ -32,6 +41,8 @@ main {
     opacity: 0;
     transition: 200ms opacity ease-in-out;
     transition-delay: 200ms;
+    display: flex;
+    justify-content: center;
 }
 
 .slide > img {
@@ -65,8 +76,6 @@ main {
     background-color: rgba(255, 255, 255, 0.884);
 }
 
-
-
 .btn-left {
     left: 1rem;
 
@@ -77,7 +86,7 @@ main {
 }
 
 .carousel-nav {
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 0.5rem;
     position: absolute;
@@ -99,6 +108,13 @@ main {
     background-color: var(--primary-color);
 }
 
+.button {
+    display: flex;
+    width: 5rem;
+    justify-content: center;
+
+}
+
 /*Blog*/
 
 .filter-and-search-block {
@@ -109,6 +125,7 @@ main {
 .blog-section {
     display: flex;
     flex-direction: column;
+    padding-top: 3rem;
 }
 
 .card-container {
@@ -125,12 +142,111 @@ main {
     border-radius: 4px;
     overflow: hidden;
     color: var(--text-color);
+    cursor: pointer;
 }
 
 .v-card-content {
     padding-top: 1rem;
 }
 
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--light-coloring)
+}
+
+.search-field {
+    padding-left: 3rem;
+}
 
 
+@media (max-width: 680px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--input-box);
+        padding: 0.6rem;
+
+    }
+
+    .nav-links.active {
+       display: block;
+    }
+
+    .logo {
+        padding: 1rem;
+
+    }
+
+    .nav-bars {
+        display: flex;
+
+    }
+
+    .carousel-container {
+        background-color: rgb(143, 143, 211);
+        height: 100vh;
+        position:static;
+    }
+    
+    .carousel-slide {
+        position: static;
+        inset: 0;
+        opacity: 0;
+        transition: 200ms opacity ease-in-out;
+        transition-delay: 200ms;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .slider-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(240, 248, 255, 0.464);
+        padding: 2rem;
+        top: 35%;
+        left: 5rem;
+        right: 5rem;
+    }
+
+    .filter-and-search-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blog-section {
+        align-items: center;
+    }
+    
+}
 

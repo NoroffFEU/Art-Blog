@@ -13,7 +13,7 @@ main {
 }
 
 .r-side {
-    background-color: var(--primary-color);
+    background-image: linear-gradient(to bottom, #ffecfa, #f7beee);
 }
 
 .l-side {
@@ -25,12 +25,38 @@ main {
     
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+   
+}
+
 .logo {
-    width: 140%;
-    height: 15%;
+    display: flex;
+    
 }
 
 
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+
+    .r-side {
+        height: 30vh;
+    }
+
+    .l-side {
+        height: 70vh;
+    }
+
+    .logo-container {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+}
 
 
 
