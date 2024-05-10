@@ -25,6 +25,13 @@ main {
     
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;

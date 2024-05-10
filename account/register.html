@@ -7,6 +7,8 @@
         <meta name="Register" content="Create new account.">
         <title>Register</title>
         <link rel="stylesheet" href="../css/log-reg.css">
+        <script defer type="module" src="/js/register.mjs"></script>
+
     </head>
 
     <body>
@@ -16,17 +18,19 @@
         <main>
             <section class="r-side"></section>
             <section class="l-side">
-                <div>
+                <div class="logo-container">
                     <img class="logo" src="../Images/Logo_Placeholder.png" alt="Logo">
                 </div>
                 <h1>Register</h1>
-                <label for="name" id="name-label" > Name</label>
-                <input id="name" name="name" type="text">
-                <label for="email" id="email-label">Email</label>
-                <input id="email" name="email" type="email">
-                <label for="password" id="password-label">Password</label>
-                <input id="password" name="password" type="password">
-                <input id="register" type="submit" value="SIGN UP">
+                <form action="" class="register-form" id="register-form">
+                    <label for="name" id="name-label" > Name</label>
+                    <input id="name" name="name" type="text" value="tester0406">
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" name="email" type="email" value="tester0406@stud.noroff.no">
+                    <label for="password" id="password-label">Password</label>
+                    <input id="password" name="password" type="password" value="password">
+                    <input id="register" type="submit" value="SIGN UP">
+                </form>
                 <a href="../account/login.html">Have a user? Log in.</a>
             </section>
         </main>
