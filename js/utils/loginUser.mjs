@@ -1,4 +1,4 @@
-import { LOGIN_URL } from "../shared/constants.mjs";
+import { LOGIN_URL } from "../api/constants.mjs";
 import { doFetch } from "./doFetch.mjs";
 import { addAuthToken } from "./handleAuth.mjs";
 
@@ -15,6 +15,7 @@ export async function loginUser(name, email, password) {
 
     const {data} = response;
     const {accessToken} = data;
+    
     if (accessToken) {
         addAuthToken(accessToken);
     } else {
