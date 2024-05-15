@@ -1,9 +1,9 @@
 import { POSTS_URL } from "./shared/constants.mjs";
-import { doFetch } from "./utils/doFetch.mjs";
+import { authFetch } from "./api/authFetch.mjs";
 
 async function getPosts () {
     console.log("getting posts");
-    const posts = await doFetch(POSTS_URL, true)
+    const posts = await authFetch(POSTS_URL, true)
     console.log(posts);
 
 }

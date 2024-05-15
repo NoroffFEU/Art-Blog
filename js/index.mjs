@@ -1,8 +1,6 @@
-
-
 import { setRegisterFormListener } from "./handlers/register.mjs";
 import { setLoginFormListener } from "./handlers/login.mjs";
-
+import * as post from "./api/posts/index.mjs";
 
 
 
@@ -14,4 +12,18 @@ if (path.startsWith("/account/register.html")) {
     setLoginFormListener();
 }
 
+
 console.log("hello my friend");
+
+post.createPost({
+    title: "Test post nt.2",
+    body: "Test post tekst"
+});
+
+//post.createPost()
+//post.updatePost()
+//post.deletePost()
+//post.getPost()
+
+post.getPost(
+    "e7d9fd66-889c-4638-84da-2fd8541200ce").then(console.log);

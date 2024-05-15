@@ -1,10 +1,10 @@
 import { LOGIN_URL } from "../api/constants.mjs";
-import { doFetch } from "./doFetch.mjs";
+import { authFetch } from "../api/authFetch.mjs";
 import { addAuthToken } from "./handleAuth.mjs";
 
 
 export async function loginUser(name, email, password) {
-    const response = await doFetch(LOGIN_URL, {
+    const response = await authFetch(LOGIN_URL, {
         method: 'POST',
         body: JSON.stringify ({
             name,
