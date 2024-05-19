@@ -15,6 +15,4 @@ export async function authFetch (url, options = {}) {
         ...options,
         headers: headers()
     })
-
-
 }

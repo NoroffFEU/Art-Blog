@@ -7,7 +7,6 @@ const method = "post";
 export async function createPost(postData) {
     const createPostURL = BASE_URL + action;
     
-
     const response = await authFetch(createPostURL, {
         method,
         body: JSON.stringify(postData)
@@ -15,3 +14,4 @@ export async function createPost(postData) {
 
     return await response.json();;
 }
+

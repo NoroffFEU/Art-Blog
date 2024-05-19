@@ -12,9 +12,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Edit" content="Edit blog post">
-        <title>Edit post</title>
+        <title>Create post</title>
         <link rel="stylesheet" href="/css/edit.css">
         <script defer type="module" src="/js/index.mjs"></script>
+        
+
     </head>
 
     <body>
@@ -35,22 +37,23 @@
             
             <div class="content">
                 <div class="info-block">
-                    <h1>Editing post</h1>
-                    <form action="" id="editPost">
+                    <h1>Creating post</h1>
+                    <form action="" id="createPost">
                         <label for="title" id="title-label">Title</label>
                         <input id="title" name="title" type="text" required>
-                        <label for="content" id="content-label">Content</label>
-                        <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+                        <label for="body" id="content-label">Content</label>
+                        <textarea name="body" id="body" cols="30" rows="10" required></textarea>
                         <label for="tags">Category</label>
                         <input type="text" name="tags" multiple>
                         <label for="media">Add photo</label>
                         <input type="url" name="media" required>
                         <a href="./post/blog_post_text.html">
-                            <input id="submit" type="submit" value="Update post">
+                            <input id="submit" type="submit" value="Create post">
                         </a>
                     </form>
                 </div>
                 <div class="image-block">
+                    
                     <img src="./images/JWG_When_The_Heart.jpg" alt="">
                 </div>
             </div>
