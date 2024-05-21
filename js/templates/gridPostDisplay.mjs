@@ -23,12 +23,12 @@ export async function createPostDisplay() {
         const tags = post.tags;
         const date = formatDate(post.created);
 
-        renderPosts(title, body, mediaUrl, tags, date ,container, 200);
+        renderPosts(post.id, title, body, mediaUrl, tags, date ,container, 200);
     }
   });
 }
 
-export function renderPosts(title, body, mediaUrl, tags, created, container, maxLength = 250) {
+export function renderPosts(postId, title, body, mediaUrl, tags, created, container, maxLength = 250) {
   
   const blogPostBlockElement = document.createElement("div");
   blogPostBlockElement.classList.add("blog-posts-block");
@@ -38,7 +38,7 @@ export function renderPosts(title, body, mediaUrl, tags, created, container, max
 
   const verticalCardElement = document.createElement("a");
   verticalCardElement.classList.add("vertical-card");
-  verticalCardElement.href ="#";
+  verticalCardElement.href ="./post/index.html?id=" + postId;
 
   const articleElement = document.createElement("article");
 
@@ -66,6 +66,7 @@ export function renderPosts(title, body, mediaUrl, tags, created, container, max
 
   const tagsElement = document.createElement("p");
   tagsElement.textContent = tags;
+  
 
 
   blogPostBlockElement.appendChild(cardContainerElement);

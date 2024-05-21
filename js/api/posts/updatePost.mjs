@@ -3,7 +3,7 @@ import { BASE_URL } from "../constants.mjs";
 import { authFetch } from "../authFetch.mjs";
 
 const action = "blog/posts/tester0406";
-const method = "put";
+const method = "PUT";
 
 export async function updatePost(postData) {
     if (!postData.id) {
@@ -12,10 +12,25 @@ export async function updatePost(postData) {
 
     const updatePostURL = `${BASE_URL}${action}/${postData.id}`;
 
+    // Log the postData object before serialization
+    console.log("postData before serialization:", postData);
+
+    const serializedData = JSON.stringify(postData);
+
+    // Log the serialized postData
+    console.log("Serialized postData:", serializedData);
+
     const response = await authFetch(updatePostURL, {
         method,
-        body: JSON.stringify(postData)
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: serializedData
     });
 
-    return await response.json()
-};
+    if (!response.ok) {
+        throw new Error("Failed to update post");
+    }
+
+    return await response.json();
+}
