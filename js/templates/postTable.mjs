@@ -1,4 +1,5 @@
 import { getPosts } from "../api/posts/getPosts.mjs";
+import { deletePost } from "../api/posts/deletePosts.mjs";
 
 document.addEventListener("DOMContentLoaded", () => {
     populateTable();
@@ -14,7 +15,13 @@ async function populateTable() {
         }
 
         const tableBody = document.querySelector("#postsTable tbody");
-    
+
+        if (!tableBody) {
+            throw new Error("Cannot find the table body element");
+        }
+
+        // Clear existing rows
+        tableBody.innerHTML = '';
 
         // Populate table rows with post data
         posts.forEach(post => {
@@ -51,15 +58,21 @@ async function populateTable() {
             editIcon.classList.add('fa-solid', 'fa-pen-to-square', 'table-icon');
             editIcon.addEventListener('click', (event) => {
                 event.stopPropagation(); // Prevent row click event
-                window.location.href = `editPost.html?id=${post.id}`;
+                window.location.href = `edit.html?id=${post.id}`;
             });
 
             const deleteIcon = document.createElement('i');
             deleteIcon.classList.add('fa-solid', 'fa-x', 'table-icon');
-            deleteIcon.addEventListener('click', (event) => {
+            deleteIcon.addEventListener('click', async (event) => {
                 event.stopPropagation(); // Prevent row click event
-                // Add your delete post functionality here
-                console.log(`Delete post with id: ${post.id}`);
+                console.log(`Attempting to delete post with id: ${post.id}`);
+                try {
+                    const deleteResponse = await deletePost(post.id);
+                    console.log(`Deleted post with id: ${post.id}`, deleteResponse);
+                    row.remove(); // Remove the row from the table
+                } catch (error) {
+                    console.error(`Failed to delete post with id: ${post.id}`, error);
+                }
             });
 
             const actionContainer = document.createElement('div');
@@ -82,3 +95,4 @@ async function populateTable() {
         console.error("Failed to populate table:", error);
     }
 }
+
