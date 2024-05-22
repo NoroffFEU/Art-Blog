@@ -27,6 +27,7 @@
         <script defer type="module" src="/js/index.mjs" ></script>
         <script defer type="module" src="/js/templates/gridPostDisplay.mjs" ></script>
         <script defer type="module" src="/js/templates/carousel.mjs" ></script>
+        <script defer type="module" src="/js/filterPosts.mjs" ></script>
         
 
     </head>
@@ -100,8 +101,9 @@
                 <div class="filter-and-search-block">
                     <div class="filter">
                         <select name="tag" id="tag-dropdown">
+                            <option value="All">All</option>
                             <option value="Artist">Artist</option>
-                            <option value="Art piece">Art piece</option>
+                            <option value="Artwork">Artwork</option>
                             <option value="Thoughts">Thoughts</option>
                         </select>
                     </div>

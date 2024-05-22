@@ -1,9 +1,8 @@
-
 import { BASE_URL } from "../constants.mjs";
 import { authFetch } from "../authFetch.mjs";
 
 const action = "blog/posts/tester0406";
-const method = "delete";
+const method = "DELETE"; // Ensure method is uppercase
 
 export async function deletePost(id) {
     if (!id) {
@@ -16,5 +15,16 @@ export async function deletePost(id) {
         method
     });
 
-    return await response.json()
-};
+    if (!response.ok) {
+        throw new Error("Failed to delete post");
+    }
+
+    // Check if there is a body in the response
+    const responseText = await response.text();
+    try {
+        return JSON.parse(responseText);
+    } catch (error) {
+        // If parsing fails, return the raw text response
+        return responseText;
+    }
+}

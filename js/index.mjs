@@ -24,7 +24,6 @@ if (path.startsWith("/account/register.html")) {
   console.log("No matching path found for setting listeners");
 }
 
-postMethods.getPost("70f62978-ca40-4e65-b370-7a2fa0a02148").then(console.log);
 postMethods.getPosts().then(console.log)
 
 //async function testTemplate() {

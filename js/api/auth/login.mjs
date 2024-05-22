@@ -15,12 +15,23 @@ export async function login(profile) {
         method,
         body
     })
-    const result = await response.json()
+    if (!response.ok) {
+        // Handle login failure, you might want to show an error message
+        const error = await response.json();
+        alert(`Login failed: ${error.message}`);
+        return;
+    }
+
+    const result = await response.json();
     
+    // Save token and profile to storage
     storage.save("token", result.data.accessToken);
-    storage.save("profile", result.data)
+    storage.save("profile", result.data);
 
     alert("You have been logged in.");
+
+    // Redirect to another page
+    window.location.href = "/post/overview-posts.html";
 }
 
 
