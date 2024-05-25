@@ -31,6 +31,10 @@ td {
 
 }
 
+tr:hover{
+    background-color: rgba(246, 244, 244, 0.471);
+}
+
 .icon-container {
     display: flex;
     gap: 0.5rem;
@@ -42,6 +46,13 @@ td {
     border-radius: 2rem;
     font-size: 1rem;
     color: var(--light-coloring);
+    cursor: pointer;
+}
+
+.table-icon:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+    
 }
 
 
