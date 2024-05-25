@@ -23,7 +23,7 @@ async function populateTable() {
         // Clear existing rows
         tableBody.innerHTML = '';
 
-        // Populate table rows with post data
+        
         posts.forEach(post => {
             const row = document.createElement('tr');
 

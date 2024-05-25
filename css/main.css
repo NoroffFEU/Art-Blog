@@ -5,6 +5,7 @@
     --background-color: #FFFCF3;
     --primary-color: #F9C7F1;
     --primary-color-text: #963787;
+    --primary-color-hover: #EFB7E6;
     --text-color: #191919;
     --input-box: #F5F3EE;
     --light-coloring: #6C6962;
@@ -41,12 +42,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-
-
 }
 
 .logo {
-    width: 50%;
+    width: 20%;
 }
 
 /*Typography*/
@@ -135,6 +134,7 @@ input {
 input[type="submit"] {
     background-color: var(--primary-color);
     padding: 0;
+    cursor: pointer;
 }
 
 textarea {
@@ -178,8 +178,29 @@ img {
     border-radius: 2px;
     font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
+    cursor: pointer;
 }
 
+.button:hover {
+    background-color: var(--primary-color-hover);
+}
 
+.back-button {
+    margin-left: 2rem;
+    padding: 0.5rem;
+    width: 4rem;
+    color: var(--text-color);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+}
 
+.back-button p {
+    padding-bottom: 0;
+    line-height: 0;
+}
 
+.back-button:hover {
+    color: var(--primary-color-text);
+}

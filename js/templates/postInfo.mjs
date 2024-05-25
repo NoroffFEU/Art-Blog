@@ -1,5 +1,6 @@
 import { getPost } from "../api/posts/getPosts.mjs";
 import { BASE_URL } from "../api/constants.mjs";
+import { formatDate } from "../utils/formating.mjs";
 
 function getPostIdFromURL() {
   const params = new URLSearchParams(window.location.search);
@@ -33,17 +34,27 @@ async function displayPost() {
       throw new Error("Post not found");
     }
 
-    const titleElement = document.createElement("h1");
-    titleElement.textContent = post.title;
-
-    const bodyElement = document.createElement("p");
-    bodyElement.textContent = post.body;
-
-    const container = document.querySelector(".post-container"); // Targeting the corrected class
+    // Select elements inside the post-container
+    const container = document.querySelector(".post-container");
 
     if (container) {
-      container.appendChild(titleElement);
-      container.appendChild(bodyElement);
+      const titleElement = container.querySelector("h1");
+      const bodyElement = container.querySelector(".wrapper > p:last-of-type");
+      const authorElement = container.querySelector(".info-block .author");
+      const dateElement = container.querySelector(".info-block .date");
+      const imageElement = container.querySelector(".image-container img");
+
+  
+
+
+      // Set the content of the elements
+      titleElement.textContent = post.title;
+      bodyElement.textContent = post.body;
+      authorElement.textContent = post.author.name;
+      dateElement.textContent = formatDate(post.created);
+      imageElement.src = post.media.url; 
+      imageElement.alt = "Post Media";
+
     } else {
       console.error("Container element not found");
     }
