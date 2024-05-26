@@ -15,3 +15,5 @@ export function setRegisterFormListener() {
         register(profile)
     })
 }
+
+setRegisterFormListener();
