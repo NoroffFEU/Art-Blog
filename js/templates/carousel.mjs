@@ -29,5 +29,3 @@ export async function populateCarousel() {
         imgElement.alt = "Post Media";
     }
 }
-
-populateCarousel();

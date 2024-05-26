@@ -4,8 +4,6 @@
 .content-container {
     display: flex;
     flex-direction: column;
-
-    
 }
 
 table {
@@ -28,6 +26,7 @@ td {
     font-weight: 400;
     padding-bottom: 1.5rem;
     padding: 1.5rem 2rem;
+    cursor: pointer;
 
 }
 
@@ -52,7 +51,6 @@ tr:hover{
 .table-icon:hover {
     background-color: var(--primary-color);
     color: var(--primary-color-text);
-    
 }
 
 

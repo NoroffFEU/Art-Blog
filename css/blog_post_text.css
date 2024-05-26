@@ -31,8 +31,6 @@ img {
     flex-direction: row-reverse;
 }
 
-
-
 @media (max-width:680px) {
     .wrapper {
         align-items: normal;

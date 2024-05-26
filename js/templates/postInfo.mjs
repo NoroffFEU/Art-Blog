@@ -10,7 +10,6 @@ function getPostIdFromURL() {
 const action = "blog/posts/tester0406";
 
 export async function getPostById(id) {
-  console.log(`Fetching post with ID: ${id}`);
   const response = await fetch(`${BASE_URL}${action}/${id}`);
   const post = await response.json();
   return post;
@@ -18,7 +17,6 @@ export async function getPostById(id) {
 
 async function displayPost() {
   const postId = getPostIdFromURL();
-  console.log(`Post ID from URL: ${postId}`);
 
   if (!postId) {
     console.error("Post ID is missing from the URL");
@@ -28,13 +26,11 @@ async function displayPost() {
   try {
     const response = await getPostById(postId);
     const post = response.data;
-    console.log(`Fetched post: ${JSON.stringify(post)}`);
 
     if (!post) {
       throw new Error("Post not found");
     }
 
-    // Select elements inside the post-container
     const container = document.querySelector(".post-container");
 
     if (container) {
@@ -45,13 +41,11 @@ async function displayPost() {
       const imageElement = container.querySelector(".image-container img");
 
   
-
-
       // Set the content of the elements
       titleElement.textContent = post.title;
       bodyElement.textContent = post.body;
-      authorElement.textContent = post.author.name;
-      dateElement.textContent = formatDate(post.created);
+      authorElement.innerHTML = "<strong>Author:</strong>"+ " " + post.author.name;
+      dateElement.innerHTML = "<strong>Created:</strong>"+ " " + formatDate(post.created);
       imageElement.src = post.media.url; 
       imageElement.alt = "Post Media";
 

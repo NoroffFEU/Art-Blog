@@ -1,0 +1,1 @@
+import * as postInfo from "../templates/postInfo.mjs"

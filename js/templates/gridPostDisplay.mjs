@@ -109,4 +109,4 @@ tagDropdown.addEventListener("change", (event) => {
   filterPostsByTag(selectedTag);
 });
 
-createPostDisplay();
+

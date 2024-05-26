@@ -1,11 +1,9 @@
 import { getPosts } from "../api/posts/getPosts.mjs";
 import { deletePost } from "../api/posts/deletePosts.mjs";
 
-document.addEventListener("DOMContentLoaded", () => {
-    populateTable();
-});
 
-async function populateTable() {
+
+export async function populateTable() {
     try {
         const response = await getPosts();
         const posts = response.data;
@@ -85,7 +83,7 @@ async function populateTable() {
 
             // Add click event to the row to make it clickable
             row.addEventListener('click', () => {
-                window.location.href = `post.html?id=${post.id}`;
+                window.location.href = `index.html?id=${post.id}`;
             });
 
             // Append the row to the table body

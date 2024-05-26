@@ -8,9 +8,8 @@
         <title>Blog Posts</title>
         <link rel="stylesheet" href="../css/blog-posts.css">
         <script src="https://kit.fontawesome.com/ab8b6737a1.js" crossorigin="anonymous"></script>
-        <script defer type="module" src="/js/templates/postTable.mjs"></script>
-
-        
+        <script defer type="module" src="/js/pages/postOverview.mjs"></script>
+        <script defer type="module" src="/js/index.mjs"></script>
     </head>
 
     <body>
@@ -24,23 +23,19 @@
                         <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
-
-
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="account/login.html">Log in</a></li>
+                    <li ><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Log out</a></li>
                 </ul>
             </nav>
-
         </header>
-
         <main >
             <div class="content-container">
                 <h1>Blog posts</h1>
                 <div class="newpost-container">
                     <a href="../post/create.html">
                         <div class="button button-newpost"> + New post</div>
-                    </a>
-                    
+                    </a> 
                 </div>
                 <table id="postsTable">
                     <thead>

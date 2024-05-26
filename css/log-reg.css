@@ -35,12 +35,10 @@ form {
 .logo-container {
     display: flex;
     justify-content: center;
-   
 }
 
 .logo {
     display: flex;
-    
 }
 
 
@@ -60,7 +58,6 @@ form {
     .logo-container {
         margin: 0;
         padding: 0;
-        
     }
 
 }

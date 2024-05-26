@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
 @import url(../css/reset.css);
+@import url(../css/nav.css);
 
 :root {
     --background-color: #FFFCF3;
@@ -37,16 +38,7 @@ main {
 }
 
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-}
 
-.logo {
-    width: 20%;
-}
 
 /*Typography*/
 
@@ -105,9 +97,13 @@ p {
 }
 
 a {
+    font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    color: var(--primary-color-text);
+    color: var(--text-color);
 }
+
+
+/*form*/
 
 label {
     font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -116,7 +112,6 @@ label {
     display: inline-block;
     width: 18rem;
     text-align: left;
-
 }
 
 input {
@@ -128,7 +123,6 @@ input {
     margin-bottom: 1.3rem;
     box-sizing: border-box;
     padding: 1rem;
-    
 }
 
 input[type="submit"] {
@@ -164,6 +158,8 @@ img {
     display: block; 
     object-fit: cover;
 }
+
+
 
 
 /* Buttons*/
@@ -204,3 +200,4 @@ img {
 .back-button:hover {
     color: var(--primary-color-text);
 }
+

@@ -25,6 +25,7 @@ export function setCreatePostListener() {
 
         // Send to API
         const response = await createPost(post);
+        alert("a new post has been created");
         console.log(response);
     });
 }
