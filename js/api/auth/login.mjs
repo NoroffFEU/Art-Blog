@@ -16,7 +16,7 @@ export async function login(profile) {
         body
     })
     if (!response.ok) {
-        // Handle login failure, you might want to show an error message
+        // Handle login failure
         const error = await response.json();
         alert(`Login failed: ${error.message}`);
         return;
