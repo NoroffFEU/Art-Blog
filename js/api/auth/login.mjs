@@ -31,7 +31,7 @@ export async function login(profile) {
     alert("You have been logged in.");
 
     // Redirect to another page
-    window.location.href = "./post/overview-posts.html";
+    window.location.href = "../post/overview-posts.html";
 }
 
 

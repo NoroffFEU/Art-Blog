@@ -14,3 +14,5 @@ export function setLoginFormListener() {
         login(profile)
     })
 }
+
+setLoginFormListener();
