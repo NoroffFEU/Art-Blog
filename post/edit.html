@@ -15,8 +15,7 @@
         <title>Edit post</title>
         <script src="https://kit.fontawesome.com/ab8b6737a1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/edit.css">
-        <script defer type="module" src="../js/index.mjs"></script>
-        <script defer type="module" src="../js/pages/edit.mjs"></script>
+        <script defer type="module" src="../js/pages/create-update.mjs"></script>
 
     </head>
 
@@ -39,10 +38,7 @@
             </a>
         </header>
         <main>
-            
-            
             <div class="content">
-                
                 <div class="info-block">
                     <h1>Editing post</h1>
                     <form action="" id="editPost">
@@ -53,18 +49,16 @@
                         <label for="tags">Category</label>
                         <input type="text" name="tags" multiple>
                         <label for="media">Add photo</label>
-                        <input type="url" name="media" required>
-                        <a href="./post/blog_post_text.html">
+                        <input type="url" name="media" id="mediaField" required>
+                        <a href="./post/blog_post_text.html" >
                             <input id="submit" type="submit" value="Update post">
                         </a>
                     </form>
                 </div>
                 <div class="image-block">
-                    <img src="./images/JWG_When_The_Heart.jpg" alt="">
+                    <img src="" alt="" id="pImage">
                 </div>
             </div>
-
-
         </main>
         <footer>
 
