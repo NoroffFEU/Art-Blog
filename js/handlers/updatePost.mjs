@@ -45,11 +45,9 @@ export async function setUpdatePostListener() {
 
             try {
                 const updatedPost = await updatePost(post);
-                console.log("Post updated successfully:", updatedPost);
-                // Display success message or navigate to a different page
+                alert("The post was updated")
             } catch (error) {
-                console.error("Failed to update post:", error);
-                // Display error message to the user
+                alert("Failed to update post")
             }
         });
     }
