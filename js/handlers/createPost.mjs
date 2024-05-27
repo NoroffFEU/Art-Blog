@@ -20,8 +20,9 @@ export function setCreatePostListener() {
             post.media = { url: post.media };
         } else {
             post.media = null;
-
         }
+
+        
 
         // Send to API
         const response = await createPost(post);
@@ -30,3 +31,5 @@ export function setCreatePostListener() {
         
     });
 }
+
+

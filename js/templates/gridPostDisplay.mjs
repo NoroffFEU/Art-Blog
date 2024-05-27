@@ -101,8 +101,7 @@ async function filterPostsByTag(tag) {
   });
 }
 
-
-// Event listener for tag dropdown change
+// Event listener for dropdown change
 const tagDropdown = document.getElementById("tag-dropdown");
 tagDropdown.addEventListener("change", (event) => {
   const selectedTag = event.target.value;
