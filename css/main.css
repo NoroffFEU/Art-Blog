@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
 @import url(../css/reset.css);
 @import url(../css/nav.css);
+@import url(../css/cards.css);
+@import url(../css/carousel.css);
 
 :root {
     --background-color: #FFFCF3;
@@ -103,6 +105,12 @@ a {
     color: var(--primary-color-text);
 }
 
+img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover;
+}
 
 /*form*/
 
@@ -152,12 +160,6 @@ select {
     margin-bottom: 1.2rem;
 }
 
-img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
-    object-fit: cover;
-}
 
 
 /* Buttons*/
@@ -202,6 +204,8 @@ img {
 .submit-button:hover {
     background-color: var(--primary-color-hover);
 }
+
+/* Footer*/
 
 .footer-container {
     display: flex;
