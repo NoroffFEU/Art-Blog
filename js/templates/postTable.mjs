@@ -21,36 +21,34 @@ export async function populateTable() {
         // Clear existing rows
         tableBody.innerHTML = '';
 
-        
         posts.forEach(post => {
             const row = document.createElement('tr');
 
-            // Title
             const titleCell = document.createElement('td');
             titleCell.textContent = post.title;
+            titleCell.setAttribute('data-cell', 'title'); 
             row.appendChild(titleCell);
 
-            // Date created
             const createdCell = document.createElement('td');
             createdCell.textContent = new Date(post.created).toLocaleDateString();
+            createdCell.setAttribute('data-cell', 'created'); 
             row.appendChild(createdCell);
 
-            // Date edited
             const editedCell = document.createElement('td');
             editedCell.textContent = new Date(post.updated).toLocaleDateString();
+            editedCell.setAttribute('data-cell', 'edited'); 
             row.appendChild(editedCell);
 
-            // Tag
             const tagCell = document.createElement('td');
             tagCell.textContent = post.tags.join(', ');
+            tagCell.setAttribute('data-cell', 'tags'); 
             row.appendChild(tagCell);
 
-            // Created by
             const createdByCell = document.createElement('td');
             createdByCell.textContent = post.author.name;
+            createdByCell.setAttribute('data-cell', 'created-by'); 
             row.appendChild(createdByCell);
 
-            // Actions
             const actionCell = document.createElement('td');
             const editIcon = document.createElement('i');
             editIcon.classList.add('fa-solid', 'fa-pen-to-square', 'table-icon');
@@ -81,7 +79,6 @@ export async function populateTable() {
             actionCell.appendChild(actionContainer);
             row.appendChild(actionCell);
 
-            // Add click event to the row to make it clickable
             row.addEventListener('click', () => {
                 window.location.href = `index.html?id=${post.id}`;
             });
@@ -93,4 +90,5 @@ export async function populateTable() {
         console.error("Failed to populate table:", error);
     }
 }
+
 
