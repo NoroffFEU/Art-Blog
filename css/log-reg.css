@@ -48,16 +48,21 @@ form {
     }
 
     .r-side {
-        height: 30vh;
+        height: 40vh;
     }
 
     .l-side {
         height: 70vh;
+        padding: 5rem 0rem;
     }
 
     .logo-container {
         margin: 0;
         padding: 0;
+    }
+
+    .logo {
+        padding-bottom: 5rem;
     }
 
 }

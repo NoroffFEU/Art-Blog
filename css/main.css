@@ -105,6 +105,15 @@ a {
     color: var(--primary-color-text);
 }
 
+.underlined-link {
+    border-bottom: 1.5px solid var(--text-color);
+}
+
+.underlined-link:hover {
+    border-bottom: 1.5px solid var(--primary-color-text);
+    color: var(--primary-color-text);
+}
+
 img {
     width: 100%; 
     height: auto; 
