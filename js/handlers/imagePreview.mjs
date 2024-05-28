@@ -2,7 +2,7 @@
   export function setImagePreview() {
     const mediaInput = document.querySelector("#mediaField");
     const previewImage = document.querySelector("#pImage");
-    const defaultImageUrl = "../images/No_Image.jpg"; 
+    const defaultImageUrl = "../Images/No_Image.jpg"; 
 
     const updatePreview = () => {
         const url = mediaInput.value;
@@ -18,8 +18,6 @@
         
         // Call updatePreview directly when the page loads
         updatePreview();
-    } else {
-        console.error("Media input or preview image element not found");
     }
 }
 
