@@ -27,22 +27,18 @@ export async function setUpdatePostListener() {
             const formData = new FormData(event.target);
             const post = Object.fromEntries(formData.entries());
             post.id = id;
-
             if (post.content) {
                 post.body = post.content;
                 delete post.content;
             }
-
             if (post.tags) {
                 post.tags = post.tags.split(",").map(tag => tag.trim());
             }
-
             if (post.media) {
                 post.media = { url: post.media};
             } else {
                 post.media = null;
             }
-
             try {
                 const updatedPost = await updatePost(post);
                 alert("The post was updated")

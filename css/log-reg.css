@@ -42,7 +42,6 @@ form {
     padding-bottom: 6rem;
 }
 
-
 @media (max-width: 700px) {
     main {
         flex-direction: column;

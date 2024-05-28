@@ -7,7 +7,6 @@ export async function populateCarousel() {
     if (!Array.isArray(posts)) {
         throw new Error("Expected an array of posts, but got: " + JSON.stringify(posts));
     }
-
     // Sort posts by date in descending order
     posts.sort((a, b) => new Date(b.created) - new Date(a.created));
 

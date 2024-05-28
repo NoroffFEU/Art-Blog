@@ -2,7 +2,6 @@
 import { BASE_URL } from "../api/constants.mjs";
 import { register } from "../api/auth/register.mjs";
 
-
 export function setRegisterFormListener() {
     const registerForm = document.querySelector("#register-form");
     registerForm.addEventListener("submit", (event) => {

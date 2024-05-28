@@ -23,7 +23,6 @@ main {
     position: relative;
 }
 
-
 .carousel-slide {
     position: absolute;
     inset: 0;
@@ -93,10 +92,6 @@ main {
     z-index: 1;
 }
 
-.carousel-indicator.current-slide {
-    background-color: var(--primary-color);
-}
-
 .button {
     display: flex;
     width: 5rem;
@@ -164,9 +159,6 @@ main {
 
 
 @media (max-width: 680px) {
-
-    
-
     .carousel-container {
         background-color: rgb(143, 143, 211);
         height: 100vh;

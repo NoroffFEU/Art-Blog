@@ -40,7 +40,6 @@ async function displayPost() {
       const dateElement = container.querySelector(".info-block .date");
       const imageElement = container.querySelector(".image-container img");
 
-  
       // Set the content of the elements
       titleElement.textContent = post.title;
       bodyElement.textContent = post.body;

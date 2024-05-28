@@ -1,7 +1,5 @@
 import { getPosts } from "./api/posts/getPosts.mjs";
 
-
-// Function to generate carousel slides with posts data
 async function generateCarousel() {
     const response = await getPosts();
     const posts = response.data;
@@ -16,7 +14,7 @@ async function generateCarousel() {
     posts.slice(0, 3).forEach((post, index) => {
         const slide = document.createElement("li");
         slide.classList.add("carousel-slide");
-        slide.setAttribute("data-post-id", post.id); // Set post ID as a data attribute
+        slide.setAttribute("data-post-id", post.id); 
 
         slide.innerHTML = `
             <div class="slider-text">
@@ -28,7 +26,7 @@ async function generateCarousel() {
         `;
 
         if (index === 0) {
-            slide.setAttribute('data-active', 'true'); // Set the first slide as active
+            slide.setAttribute('data-active', 'true'); 
         }
 
         carouselTrack.appendChild(slide);

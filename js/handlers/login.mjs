@@ -2,7 +2,6 @@
 import { BASE_URL } from "../api/constants.mjs";
 import { login } from "../api/auth/login.mjs";
 
-
 export function setLoginFormListener() {
     const loginForm = document.querySelector("#login-form");
     loginForm.addEventListener("submit", (event) => {

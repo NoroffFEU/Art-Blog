@@ -1,3 +1,3 @@
-import { openNavMobile } from "./nav.mjs";
+import { openNavMobile } from "./handlers/nav.mjs";
 
 openNavMobile();

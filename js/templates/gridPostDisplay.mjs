@@ -76,7 +76,6 @@ export function renderPosts(postId, title, body, mediaUrl, tags, created, contai
   container.appendChild(cardContainerElement);
 }
 
-
 async function filterPostsByTag(tag) {
   const container = document.querySelector(".card-container");
   container.innerHTML = ""; // Clear existing posts

@@ -51,7 +51,6 @@ nav a:hover {
         width: 100%;
         background-color: var(--input-box);
         padding: 0.6rem;
-
     }
 
     .nav-links.active {
@@ -60,11 +59,9 @@ nav a:hover {
 
     .logo {
         padding: 1rem;
-
     }
 
     .nav-bars {
         display: flex;
-
     }
 }
