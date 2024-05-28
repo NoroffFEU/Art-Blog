@@ -13,10 +13,10 @@ export async function register(profile) {
         },
         method,
         body
-    })
+    });
 
     const result = await response.json();
-    alert ("You have been registered.");
-    return result
+    alert("You have been registered.");
 
+    return result;
 }
