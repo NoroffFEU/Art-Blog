@@ -52,12 +52,14 @@ tr:hover{
     color: var(--primary-color-text);
 }
 
-/*Button*/
+
 
 .newpost-container {
     display: flex;
     justify-content: end;
 }
+
+
 
 .button-newpost {
     display: flex;
