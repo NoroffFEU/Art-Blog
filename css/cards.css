@@ -44,5 +44,5 @@
 .tag-marker p {
     border: 0.1rem solid var(--light-coloring);
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }

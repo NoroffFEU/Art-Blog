@@ -68,4 +68,10 @@ img {
     .content {
         flex-direction: column-reverse;
     }
+
+    .image-block {
+        flex: 1;
+        overflow: hidden;
+        padding-bottom: 1rem;
+    }
 }

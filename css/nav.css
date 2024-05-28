@@ -25,6 +25,12 @@ nav a:hover {
     gap: 1rem;
 }
 
+.login-link {
+    font-weight: 700;
+    color: var(--primary-color-text);
+}
+
+
 @media (max-width: 680px) {
     nav {
         display: flex;
