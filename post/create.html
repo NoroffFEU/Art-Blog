@@ -18,12 +18,12 @@
         <header>
             <nav>
                 <a href="../index.html">
-                    <img class="logo" src="../images/Logo_Placeholder.png" alt="Logo">
+                    <img class="logo" src="/images/Logo_Placeholder.png" alt="Logo">
                 </a>
                 <ul >
                     <li class="nav-links" id="navLinks">
-                        <a href="index.html">Blog</a>
-                        <a href="../account/login.html">Log in</a>
+                        <a href="../index.html">Blog</a>
+                        <a href="../account/login.html">Log out</a>
                     </li>
                 </ul>
             </nav>
@@ -42,11 +42,11 @@
                         <label for="body" id="content-label">Content</label>
                         <textarea name="body" id="body" cols="30" rows="10" required></textarea>
                         <label for="tags">Category</label>
-                        <input type="text" name="tags" multiple>
-                        <label for="media">Add photo</label>
+                        <input type="text" name="tags" id="tags" multiple>
+                        <label for="mediaField">Add photo</label>
                         <input type="url" name="media" id="mediaField" required>
-                        <label for="alt-text">Add alt text to photo</label>
-                        <input type="text" name="alt-text" id="alt-Text" >
+                        <label for="altText">Add alt text to photo</label>
+                        <input type="text" name="alt-text" id="altText" >
                         <a href="./post/blog_post_text.html" class="submit-button-container" >
                             <input id="submit" type="submit" value="Create post" class="submit-button">
                         </a>

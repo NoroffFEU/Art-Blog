@@ -27,8 +27,8 @@
                 </a>
                 <ul>
                     <li class="nav-links" id="navLinks"> 
-                        <a href="index.html">Blog</a>
-                        <a href="../account/login.html">Log in</a>
+                        <a href="../index.html">Blog</a>
+                        <a href="../account/login.html">Log out</a>
                     </li>
                 </ul>
             </nav>
@@ -43,12 +43,12 @@
                     <h1>Editing post</h1>
                     <form action="" id="editPost">
                         <label for="title" id="title-label">Title</label>
-                        <input id="title" name="title" type="text" required>
+                        <input id="title" name="title" type="text" id="title" required>
                         <label for="content" id="content-label">Content</label>
                         <textarea name="content" id="content" cols="30" rows="10" required></textarea>
                         <label for="tags">Category</label>
-                        <input type="text" name="tags" multiple>
-                        <label for="media">Add photo</label>
+                        <input type="text" name="tags" id="tags" multiple>
+                        <label for="mediaField">Add photo</label>
                         <input type="url" name="media" id="mediaField" required>
                         <a href="./post/blog_post_text.html" class="submit-button-container" >
                             <input id="submit" type="submit" value="Update post" class="submit-button">
