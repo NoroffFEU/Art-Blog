@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="../css/edit.css">
         <!--JS-->
         <script type="module" src="../js/pages/create-update.mjs"></script>
-         ></script>
     </head>
     <body>
         <header>
@@ -36,13 +35,13 @@
             <div class="content">
                 <div class="info-block">
                     <h1>Creating post</h1>
-                    <form action="" id="createPost">
+                    <form id="createPost">
                         <label for="title" id="title-label">Title</label>
                         <input id="title" name="title" type="text" required>
                         <label for="body" id="content-label">Content</label>
                         <textarea name="body" id="body" cols="30" rows="10" required></textarea>
                         <label for="tags">Category</label>
-                        <input type="text" name="tags" id="tags" multiple>
+                        <input type="text" name="tags" id="tags">
                         <label for="mediaField">Add photo</label>
                         <input type="url" name="media" id="mediaField" required>
                         <label for="altText">Add alt text to photo</label>
@@ -53,7 +52,7 @@
                     </form>
                 </div>
                 <div class="image-block">
-                    <img id="pImage">
+                    <img src="" alt="Image for blog post" id="pImage">
                 </div>
             </div>
         </main>

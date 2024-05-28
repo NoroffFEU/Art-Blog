@@ -35,13 +35,13 @@
             <div class="content">
                 <div class="info-block">
                     <h1>Editing post</h1>
-                    <form action="" id="editPost">
+                    <form id="editPost">
                         <label for="title" id="title-label">Title</label>
-                        <input id="title" name="title" type="text" id="title" required>
+                        <input id="title" name="title" type="text" required>
                         <label for="content" id="content-label">Content</label>
                         <textarea name="content" id="content" cols="30" rows="10" required></textarea>
                         <label for="tags">Category</label>
-                        <input type="text" name="tags" id="tags" multiple>
+                        <input type="text" name="tags" id="tags">
                         <label for="mediaField">Add photo</label>
                         <input type="url" name="media" id="mediaField" required>
                         <a href="./post/blog_post_text.html" class="submit-button-container" >
@@ -50,7 +50,7 @@
                     </form>
                 </div>
                 <div class="image-block">
-                    <img id="pImage">
+                    <img src="" alt="Image for blog post" id="pImage">
                 </div>
             </div>
         </main>
