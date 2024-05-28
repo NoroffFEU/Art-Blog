@@ -5,14 +5,15 @@
 
 .slider-text {
     position: absolute;
-    background-color: rgba(240, 248, 255, 0.464);
+    background-color: rgba(255, 246, 240, 0.518);
     padding: 2rem;
     top: 50%;
     width: 50%;
+    border-radius: 0.2rem;
 }
 
 .carousel-container {
-    background-color: rgb(143, 143, 211);
+    background-color: var(--primary-color);
     height: 100vh;
     position: relative;
 }
