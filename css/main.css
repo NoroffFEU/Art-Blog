@@ -200,7 +200,7 @@ img {
 }
 
 .back-button:hover {
-    color: var(--primary-color-text);
+    color: var(--primary-color);
 }
 
 .submit-button:hover {
