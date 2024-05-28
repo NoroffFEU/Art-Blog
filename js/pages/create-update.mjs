@@ -17,5 +17,6 @@ if (path.startsWith("/post/create")) {
     console.log("No matching path found for setting listeners");
 }
 
+
 setImagePreview();
 setImageAltText();
