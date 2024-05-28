@@ -222,3 +222,10 @@ select {
     padding: 1rem;
 }
 
+@media (max-width: 680px) {
+    .back-button {
+        margin-left: 0.5rem;
+    }
+    
+
+}

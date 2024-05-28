@@ -63,5 +63,6 @@ nav a:hover {
 
     .nav-bars {
         display: flex;
+        padding-right: 0.5rem;
     }
 }

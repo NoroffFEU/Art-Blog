@@ -12,18 +12,22 @@
         <link rel="stylesheet" href="../css/edit.css">
         <!--JS-->
         <script type="module" src="../js/pages/create-update.mjs"></script>
+        <script type="module" src="../js/index.mjs"></script>
     </head>
     <body>
         <header>
             <nav>
-                <a href="../index.html">
-                    <img class="logo" src="../Images/Logo_Placeholder.png" alt="Logo">
-                </a>
-                <ul >
-                    <li class="nav-links" id="navLinks">
-                        <a href="../index.html">Blog</a>
-                        <a href="../account/login.html">Log out</a>
-                    </li>
+                <div class="nav-container">
+                    <a href="../index.html">
+                        <img class="logo" src="../Images/Logo_Placeholder.png" alt="Logo">
+                    </a>
+                    <div class="nav-bars" id="navBars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li ><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Log out</a></li>
                 </ul>
             </nav>
             <a href="overview-posts.html" class="back-button">
