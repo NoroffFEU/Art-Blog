@@ -144,6 +144,11 @@ main {
     padding-top: 1rem;
 }
 
+.card-date {
+    font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0.5rem;
+}
+
 .tag-marker {
     display: flex;
 }
