@@ -133,11 +133,26 @@ main {
     overflow: hidden;
     color: var(--text-color);
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.vertical-card:hover {
+    transform: scale(1.1);
 }
 
 .v-card-content {
     padding-top: 1rem;
 }
+
+.tag-marker {
+    display: flex;
+}
+
+.tag-marker p {
+    border: 0.1rem solid var(--light-coloring);
+    padding: 0.5rem;
+}
+
 
 .search-container {
     position: relative;
