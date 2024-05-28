@@ -7,10 +7,10 @@ import { setImageAltText } from "../handlers/setAltText.mjs";
 
 const path = location.pathname;
 
-if (path.startsWith("/post/create")) {
+if (path.includes("/post/create")) {
     console.log("Setting create post listener");
     setCreatePostListener();
-} else if (path.startsWith("/post/edit")) {
+} else if (path.includes("/post/edit")) {
     console.log("Setting update post listener");
     setUpdatePostListener();
 } else {
