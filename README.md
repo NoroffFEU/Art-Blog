@@ -30,7 +30,11 @@ If you want to contribute send me a message first. I also want you to make sure 
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+Here is some places you can contact me:
+
+[My email](julie.habbestad@hotmail.com)
+
+[My LinkedIn page](in/julie-habbestad-4388161b0)
 
 [My email](julie.habbestad@hotmail.com)
 
