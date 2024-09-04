@@ -11,6 +11,7 @@ async function getPosts () {
 function main () {
     getPosts();
     console.log("/posts/")
+    console.log("hello")
 }
 
 main();
