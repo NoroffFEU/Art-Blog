@@ -23,4 +23,3 @@ export async function getPost(id) {
 
     return await response.json()
 };
-

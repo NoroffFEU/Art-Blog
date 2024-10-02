@@ -1,4 +1,4 @@
-import { POSTS_URL } from "./shared/constants.mjs";
+import { POSTS_URL } from "./api/constants.mjs";
 import { authFetch } from "./api/authFetch.mjs";
 
 async function getPosts () {
