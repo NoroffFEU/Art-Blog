@@ -5,7 +5,7 @@
 
 ## Description
 
-I have created an art blog. In addition to seeing an overview of the blogs and reading them, the user can create, edit and delete blog posts if they have a user.
+This is an art blog. In addition to seeing an overview of the blogs and reading them, the user can create, edit and delete blog posts if they have a user.
 
 - Read blog posts about art
 - Create new blog posts
